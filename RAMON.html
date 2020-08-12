@@ -1,0 +1,158 @@
+<html>
+ <head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ 
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ </head>
+ 
+ 
+ <body>
+ <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#!" onclick="Mudarestado('interno')">INTERNO</a></li>
+        <li><a href="#!" onclick="Mudarestado('externo')">EXTERNO</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+   <div class="row" >
+    <div class="input-field col s2">
+     <input Requisicao="Preenchendo requisição" id="N_Req" type="number" class="validate">
+     <label for="N_Req">Nº da Requisição</label>
+     <script>reqInt()</script>
+    </div>
+     
+    <div class="input-field col s4">
+     <input id="Nome_Func" type="text" class="validate">
+     <label for="Nome_Func">Nome do solicitante</label>
+    </div>
+     
+    <div class="input-field col s2">
+     <input id="Id_Carro" type="text" class="validate">
+     <label for="Id_Carro">Placa/Chassi</label>
+    </div>
+   </div>
+   
+   <div class="row">
+    <div class="input-field col s2">
+     <input id="Q_Litros" type="number" class="validate">
+     <label for="Q_Litros">Quantidade de litros</label>
+    </div>
+   
+    <div class="input-field col s2">
+     <input id="Valor" type="number" class="validate">
+     <label for="Valor">Valor solicitado</label>
+    </div>
+   
+    <div class="input-field col s2">
+     <input type="date" class="date">
+    </div>
+   </div>
+   
+   
+  <div class="row">
+      
+   <div class="input-field col s3">
+    <p>
+      <label>
+        <input class="with-gap" name="CC" type="radio"  />
+        <span>100 - Veículos Novos</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="CC" type="radio"  />
+        <span>200 - Veículos Usados</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="CC" type="radio"  />
+        <span>300 - Peças</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="CC" type="radio"  />
+        <span>400 - Pós vendas</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="CC" type="radio"  />
+        <span>500 - Funilaria e Pintura</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="CC" type="radio"  />
+        <span>600 - Administração</span>
+      </label>
+    </p>
+   </div>
+ 
+   <div id="externo" class="input-field col s3" style="display: none;">
+    <p>
+      <label>
+        <input class="with-gap" name="Revenda" type="radio"  />
+        <span>7.1 Gov. Valadares</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="Revenda" type="radio"  />
+        <span>7.2 Manhuaçu</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="Revenda" type="radio"  />
+        <span>7.3 Vila Velha</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="Revenda" type="radio"  />
+        <span>7.4 Vitória</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="Revenda" type="radio"  />
+        <span>7.5 Linhares</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="Revenda" type="radio"  />
+        <span>7.6 Ipatinga</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="Revenda" type="radio"  />
+        <span>7.7 Cachoeiro</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="Revenda" type="radio"  />
+        <span>7.8 Shopping VV</span>
+      </label>
+    </p>
+   </div>
+   
+   </div>
+ 
+ 
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="./testejs.js"></script>
+ </body>
+</html>
